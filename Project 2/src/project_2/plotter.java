@@ -1,0 +1,54 @@
+package project_2;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.io.IOException;
+
+public class plotter 
+{
+	private double x;
+	private ArrayList point;
+	public plotter()
+	{
+		double x;
+		
+	}
+	
+	public double parb(double x)
+	{	
+		double result = Math.pow(x, 2)+ (2*x) +1;
+		return result;
+	}
+	
+	public void run(double runamount)
+	{
+		try(FileWriter Writer = new FileWriter("plotter.csv");
+				BufferedWriter creator = new BufferedWriter(Writer))
+			{
+				for(int j =0; j<runamount;j++)
+				{
+					double function = parb(j);
+					creator.write(String.valueOf((function))); 
+					creator.newLine();
+				}
+				System.out.println(" successfully transfered to file" );
+			}
+			catch(IOException e)
+			{
+				e.printStackTrace();
+			}
+		
+	}
+	
+	public void writer(ArrayList p, double run)
+	{
+		
+			
+		
+		
+	}
+	
+	
+}
