@@ -16,7 +16,7 @@ public class plotter
 		
 	}
 	
-	public double parb(double x)
+	public double parb(int x)
 	{	
 		double result = Math.pow(x, 2)+ (2*x) +1;
 		return result;
@@ -29,7 +29,7 @@ public class plotter
 			{
 				for(int j =0; j<runamount;j++)
 				{
-					double function = parb(j);
+					int function = (int) parb(j);
 					creator.write(String.valueOf((function))); 
 					creator.newLine();
 				}

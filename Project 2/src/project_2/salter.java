@@ -24,9 +24,9 @@ public class salter
 			String strLine = "";
 			while ((strLine = Reader.readLine()) != null) 
 			{
-				String[] values = strLine.split(",");
+				String[] values = strLine.split("");
 				int randomNumber = n.nextInt(maxsaltvalue - minsaltvalue / 2);
-				int old_y_values = Integer.parseInt(values[1]);
+				int old_y_values = Integer.parseInt(values[0]);
 				int new_y_values = randomNumber + old_y_values;
 				values[0] = Integer.toString(new_y_values);
 				String s2 = (values[0]);
