@@ -8,8 +8,7 @@ import java.io.IOException;
 
 public class plotter 
 {
-	private double x;
-	private ArrayList point;
+
 	public plotter()
 	{
 		double x;
@@ -41,14 +40,5 @@ public class plotter
 			}
 		
 	}
-	
-	public void writer(ArrayList p, double run)
-	{
-		
-			
-		
-		
-	}
-	
 	
 }

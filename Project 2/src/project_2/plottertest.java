@@ -12,14 +12,14 @@ public class plottertest
 		
 		PrintWriter data= new PrintWriter("plot.csv");
 		
-		//test.run(5000);
+		test.run(5000);
 		
-		salter trial =new salter();
+		//salter trial =new salter();
 				
 		//trial.saltedvalues("plotter.csv",2500, 7500);		
 		
-		smoother burgle = new smoother();
+		//smoother burgle = new smoother();
 		
-		burgle.smooth("Function_points_salted.csv",6000,6000);
+		//burgle.smooth("Function_points_salted.csv",4);
 	}
 }
