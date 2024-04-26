@@ -42,7 +42,7 @@ public class plotterv3 extends ApplicationFrame
 	{
 		for(int i = lowlimit; i <= upperlimit; i++)
 		{		
-			int function = (int) (Math.pow(i, 2))+(2*i)-1;
+			int function = (int) (Math.pow(i, 2))+(2*i)+1;
 			
 			plotter.add(i,function);
 			
