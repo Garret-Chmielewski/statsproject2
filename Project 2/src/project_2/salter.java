@@ -1,5 +1,8 @@
 package project_2;
-
+/**
+ * geot reference from this git hub
+ * https://github.com/Roxy-0904/Probability-and-applied-statistics/tree/master/Project_2
+ */
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -19,7 +22,7 @@ public class salter
 		try 
 		{
 			Reader = new BufferedReader(new FileReader(filename));
-			writer = new FileWriter("Function_points_salted.csv");
+			writer = new FileWriter("salted.csv");
 			Creater = new BufferedWriter(writer);
 			String strLine = "";
 			while ((strLine = Reader.readLine()) != null) 
