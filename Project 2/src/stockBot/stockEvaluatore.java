@@ -2,6 +2,7 @@ package stockBot;
 /**
  * referenced this git hub 
  * https://github.com/Roxy-0904/Probability-and-applied-statistics/tree/master/Project_2/src/stockmarket
+ *  Mia helped complete
  */
 import java.io.BufferedReader;
 import java.io.File;
