@@ -35,7 +35,7 @@ public class SmootherV3 extends ApplicationFrame
 	public SmootherV3(String title) 
 	{
 		super(title);
-		createLinechart("Smooth Graph V3",Smoother(6000));
+		createLinechart("Smooth Graph V3",Smoother(5));
 	}
 	
 	public void createLinechart(String title, XYDataset dataset)
@@ -50,7 +50,7 @@ public class SmootherV3 extends ApplicationFrame
 	{
 		DescriptiveStatistics ds = new DescriptiveStatistics();
 		readCSVToData(3);
-		for(int i = 0; i < smoother.getMaxX(); i++) 
+		for(int i = 0; i < smoother.getItemCount(); i++) 
 		{
 			ds.setWindowSize(slidingWindowLength);
 			ds.addValue(smoother.getY(i).intValue());
@@ -67,12 +67,7 @@ public class SmootherV3 extends ApplicationFrame
 	private void writeTofile(int dim, int function)
 	{
 		try (FileWriter Creater = new FileWriter("SmootherV3.csv",true))
-		{
-			if(dim == lowlimit) 
-			{
-				Creater.write("x" + "," + "y\n");
-			}
-			
+		{		
 			String s2 = (dim + "," + function + "\n");
 			Creater.write(s2);
 			Creater.flush();
@@ -107,7 +102,7 @@ public class SmootherV3 extends ApplicationFrame
 					} 
 					else if (num == 3) 
 					{
-							smoother.add(x, y);
+						smoother.add(x, y);
 					}
 				}
 				counter++;

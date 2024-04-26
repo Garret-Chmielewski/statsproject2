@@ -8,16 +8,9 @@ import java.io.IOException;
 
 public class plotter 
 {
-
-	public plotter()
-	{
-		double x;
-		
-	}
-	
 	public double parb(int x)
 	{	
-		double result = Math.pow(x, 2)+ (2*x) +1;
+		double result = Math.pow(x, 2)+ (2*x)+1;
 		return result;
 	}
 	
@@ -38,7 +31,6 @@ public class plotter
 			{
 				e.printStackTrace();
 			}
-		
 	}
 	
 }

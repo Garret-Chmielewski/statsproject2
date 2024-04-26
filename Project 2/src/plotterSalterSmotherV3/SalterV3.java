@@ -48,7 +48,7 @@ public class SalterV3 extends ApplicationFrame
 	private XYDataset Salter(int minsaltvalue, int maxsaltvalue)
 	{
 		readCSVToData(2);
-		for (int i = 0; i <= salter.getMaxX(); i++)
+		for (int i = 0; i < salter.getItemCount(); i++)
 		{
 			int randomNumber = n.nextInt(maxsaltvalue - minsaltvalue / 2);
 			int new_y_values = salter.getY(i).intValue();

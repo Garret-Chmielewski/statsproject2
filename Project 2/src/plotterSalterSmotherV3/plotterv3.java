@@ -40,7 +40,7 @@ public class plotterv3 extends ApplicationFrame
 	
 	private XYDataset createPlotter()
 	{
-		for(int i = lowlimit; i <= upperlimit; i++)
+		for(int i = lowlimit; i < upperlimit; i++)
 		{		
 			int function = (int) (Math.pow(i, 2))+(2*i)+1;
 			
