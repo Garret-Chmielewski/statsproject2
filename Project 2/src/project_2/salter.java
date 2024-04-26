@@ -1,7 +1,8 @@
 package project_2;
 /**
- * geot reference from this git hub
+ * got reference from this git hub
  * https://github.com/Roxy-0904/Probability-and-applied-statistics/tree/master/Project_2
+ * and Mia helped finish the reader
  */
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
